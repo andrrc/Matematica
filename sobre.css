@@ -1,0 +1,137 @@
+:root{
+  --corprincial : rgb(45, 45, 72);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #23232e;
+  position: relative;
+  margin: 0 auto;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-menu {
+  /* position: fixed; */
+  width: 100vw;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+header {
+  margin-bottom:30px ;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background:#23232e;
+  height: 8vh;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+p {
+  text-align: left;
+  color: white;
+}
+footer {
+  height: 5rem;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(45, 45, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px ;
+}
+body::-webkit-scrollbar{
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color:rgb(45, 45, 72);       
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, red, #ffff00, #00ff00, #0099ff, red , #ffff00, #00ff00, red, #0099ff, #001aff, #a200ff, red);  /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+/* Estilos para o menu dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  font-size: 18px ;
+  text-transform: uppercase ;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--corprincial);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  display: block;
+}
+.artigo-about {
+    width: 100vw;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+}
+.section-about {
+    max-width: 50rem;
+    padding: 10px;
+    color: white;
+    background-color: var(--corprincial);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+@media (max-width:400px){
+  .dropdown-toggle {
+    font-size: 13px;
+  }
+  .section-about{
+    width: 100vw;
+    font-size: 13px;
+  }
+}
+@media  (max-width:195px){
+  .dropdown-toggle{
+    font-size: 10px;
+  }
+}

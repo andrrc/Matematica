@@ -1,0 +1,279 @@
+:root{
+  --corprincial : rgb(45, 45, 72);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: #23232e;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-menu {
+  /* position: fixed; */
+  width: 100vw;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background:#23232e;
+  height: 8vh;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+
+.section-pai {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  /* outline: #23232e solid 2px; */
+  background: transparent;
+  flex-direction: column;
+  border-radius: 0 0 25px 25px;
+}
+iframe {
+  border-radius: 0 0 25px 25px;
+}
+.section-group {
+  width: fit-content;
+  height: 25rem;
+  text-align: center;
+  border-radius: 25px;
+  color: #fff;
+}
+.banner {
+  width: 100vw;
+  max-width: 100vw;
+  /* margin-top: 50px; */
+}
+.bannerimg {
+  width: 100%;
+}
+.titulo-artigo {
+  color: white;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.artigo-equilibrio {
+  max-width: 100vw;
+  height: fit-content;
+  justify-content: center;
+  display: flex;
+  
+}
+p {
+  text-align: left;
+  color: white;
+}
+.section-equilibrio {
+  background: linear-gradient(rgb(45, 45, 72), rgb(57, 57, 88));
+  max-width: 50rem;
+  height: fit-content;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 3px 2px 8px 1px black;
+  margin-top: 10px;
+  
+  
+}
+.artigo-video {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.section-video_fita {
+  background: linear-gradient(rgb(45, 45, 72), rgb(57, 57, 88));
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+  border-radius: 25px;
+}
+h2 {
+  color: white !important;
+}
+.imagemtopic {
+  max-width: 100%;
+  height: auto;
+}
+.imagem-exe {
+  max-width: 50rem;
+  width: 20rem;
+  height: auto;
+}
+.div-img {
+  display: flex;
+  width: 20rem;
+  height: 20rem;
+  background-color: red;
+}
+
+footer {
+  height: 5rem;
+  width: 100vw;
+  background-color: rgb(45, 45, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px ;
+}
+select,option {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: none;
+}
+.youtube {
+  max-width: 460px;
+}
+body::-webkit-scrollbar{
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color:rgb(45, 45, 72);       
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #0099ff ;
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+/* Estilos para o menu dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  font-size: 18px ;
+  text-transform: uppercase ;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--corprincial);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  display: block;
+}
+
+
+.imagem-youtube {
+  max-width: 40rem;
+  width: 30rem;
+  height: 15rem;
+}
+@media (max-width:800px) and (min-width: 368px) {
+  .logo {
+    font-size: 0.8rem;
+  }
+  .section-equilibrio{
+    width: 100%;
+    border-radius: 0;
+    font-size: 10px;
+  }
+  .imagem-exe {
+    width: 15rem;
+  }
+  .div-img {
+    width: 10rem;
+    height: auto;
+  }
+  .imagemtopic{
+    width: 20rem;
+  }
+  .imagem-youtube {
+    width: 20rem;
+  }
+  .pergunta-exe {
+    font-size: 20px;
+  }
+  
+}
+@media (max-width:368px){
+  footer {
+    font-size: 0.8rem;
+  }
+  .logo { 
+    font-size: 0.7rem;
+    
+  }
+  .section-video_fita{
+    width: 90vw;
+
+  }
+  .imagem-youtube {
+    width: 15rem;
+  }
+  .section-equilibrio{
+    width: 100%;
+    border-radius: 0;
+    font-size: 8px;
+  }
+  .imagem-exe {
+    width: 15rem;
+  }
+  .div-img {
+    width: 10rem;
+    height: auto;
+  }
+  .imagemtopic{
+    width: 20rem;
+  }
+  button {
+    font-size: 12px !important;
+    width: 50px;
+    height: 15px;
+  }
+  .pergunta-exe {
+    font-size: 20px;
+  }
+
+
+}
+button:hover {
+  opacity: 0.5;
+}
+button {
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  font-size: 15px;
+}
+#section-script {
+  list-style:none;
+}
